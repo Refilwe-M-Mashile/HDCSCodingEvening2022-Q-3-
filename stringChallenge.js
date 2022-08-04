@@ -22,6 +22,6 @@ const allAboutStrings = (str) => {
   return output;
 };
 
-console.log(allAboutStrings("LASA")); // [4, "L", "A", "AS", "@ index 3"]
+console.log(allAboutStrings("LASA")); //➞ [4, "L", "A", "AS", "@ index 3"]
 console.log(allAboutStrings("Computer")); //➞ [8, "C", "r", "pu", "not found"]
 console.log(allAboutStrings("Science")); //➞ [7, "S", "e", "e", "@ index 5"]
