@@ -7,11 +7,9 @@ const allAboutStrings = (str) => {
 
   const half = Math.floor(strLength / 2);
   /* check if the length is odd or even then push the middle character(s)*/
-  if (strLength % 2 == 0) {
-    output.push(str[half - 1] + str[half]);
-  } else {
-    output.push(str[half]);
-  }
+  strLength % 2 === 0
+    ? output.push(str[half - 1] + str[half])
+    : output.push(str[half]);
 
   const secCharacter = str[1]; //second Character
   const moreChar = str.indexOf(secCharacter, 2);
