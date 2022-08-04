@@ -1,12 +1,13 @@
 const allAboutStrings = (str) => {
   const output = [];
-  output.push(str.length); //length of string
+  const strLength = str.length;
+  output.push(strLength); //length of string
   output.push(str[0]); //first character
-  output.push(str[str.length - 1]); //last character
+  output.push(str[strLength - 1]); //last character
 
-  const half = Math.floor(str.length / 2);
+  const half = Math.floor(strLength / 2);
   /* check if the length is odd or even then push the middle character(s)*/
-  if (str.length % 2 == 0) {
+  if (strLength % 2 == 0) {
     output.push(str[half - 1] + str[half]);
   } else {
     output.push(str[half]);
