@@ -4,11 +4,12 @@ const allAboutStrings = (str) => {
   output.push(str[0]); //first character
   output.push(str[str.length - 1]); //last character
 
+  const half = Math.floor(str.length / 2);
   /* check if the length is odd or even then push the middle character(s)*/
   if (str.length % 2 == 0) {
-    output.push(str[str.length / 2 - 1] + str[str.length / 2]);
+    output.push(str[half - 1] + str[half]);
   } else {
-    output.push(str[Math.floor(str.length / 2)]);
+    output.push(str[half]);
   }
 
   const secCharacter = str[1]; //second Character
